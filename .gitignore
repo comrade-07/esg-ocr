@@ -13,3 +13,4 @@ data/silver/*
 data/gold/*
 data/warehouse/*
 data/output/*
+.env
