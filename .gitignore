@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+
+# Local machine configuration. Copy config/settings.example.yaml to this file.
+config/settings.yaml
+
+# Local pipeline inputs and generated outputs.
+data/source/*.json
+data/bronze/*.csv
+data/silver/*
+data/gold/*
+data/warehouse/*
+data/output/*

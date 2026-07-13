@@ -1,0 +1,48 @@
+# Editable dropdown values for Scope 2 manual data entry.
+# Add, remove, or rename options here without changing the app code.
+
+manual_entry:
+  date_output_format: "%Y-%m-%d"
+  date_display_format: "YYYY-MM-DD"
+
+fields:
+  data_quality:
+    label: Data quality
+    options:
+      - Actual
+      - Estimated
+  division:
+    label: Division
+    options: []
+  legal_entity_name:
+    label: Legal Entity Name
+    options: []
+  unit:
+    label: Unit
+    options: []
+  consumption_start_date:
+    label: Consumption start date
+    options: []
+  consumption_end_date:
+    label: Consumption end date
+    options: []
+  transaction_date:
+    label: Transaction Date
+    options: []
+  amount_of_energy_consumed:
+    label: Amount of energy consumed
+    options: []
+  energy_unit:
+    label: Energy Unit
+    options:
+      - kWh
+      - MWh
+      - mmBTU
+validation:
+  entity_list:
+    source: ../reference/master_entity_list.csv
+    columns:
+      active: active
+      division: division
+      legal_entity_name: legal_entity_name
+      unit: unit
